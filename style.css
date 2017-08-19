@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: tahoma;
+}
+
+body {
+    background-color: #F8F8FA;
+}
+
+.site-wrap {
+    padding: 20px;
+}
+
+nav {
+    padding: 20px;
+    background-color: #005189;
+    position: relative;
+    /*background-image: url(camo.jpg);*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    /*box-shadow: 1px 0px 3px grey;*/
+    box-shadow: 1px 4px 3px #888686;
+}
+
+nav #nav-links a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+nav #nav-links {
+    float: left;
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 50px / 2);
+    right: 10px;
+}
+
+ul#files-list, ul#tables-list {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #eaeaea;
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+#files-list li, #tables-list li {
+    padding: 10px;
+    list-style-type: none;
+    color: #444;
+    cursor: pointer;
+}
+
+#files-list li:not(:last-child), #tables-list li:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* Upload file */
+#upload-wrap {
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 300px / 2);
+    left: calc(50% - 400px / 2);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#upload-wrap #upload-btn {
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #e6e6e6;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: #636363;
+    background: #E9E2FF;
+    background-image: url(file-upload-icon.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#upload-wrap #upload-btn:hover {
+    transform: scale(1.1);
+}
+
+#selected_file {
+    display: none;
+}
+
+#upload_additional_info {
+    margin-top: 10px;
+    display: none;
+}
+
+#upload_additional_info input {
+    padding: 10px 14px;
+    border: 1px solid #ebebeb;
+    width: 75%;
+    margin: 6px auto auto auto;
+}
+
+#upload_additional_info input[name="update_number"] {
+    width: 65px;
+}
+
+#upload_additional_info input[name="command_name"] {
+    width: 200px;
+}
+
+#upload_additional_info span {
+    display: block;
+}
+
+#upload_additional_info #submit {
+    width: 77%;
+    margin: 6px auto auto auto;
+    padding: 10px 14px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 3px;
+    background-image: url(camo.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 38px #212121;
+    cursor: pointer;
+}
+
+#command_display {
+    height: 100%;
+    border: none;
+}
+
+#files-list li #update-number {
+    color: #636363;
+    font-size: 11px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+}
+
+#files-list li {
+    position: relative;
+    word-break: break-all;
+}
+
+#files-list li #added-info {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+}
+
+#command-display-title {
+    font-size: 23px;
+    color: #444;
+    display: inline-block;
+}
+
+#command-display-update-num {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+tr th {
+    text-align: right;
+}
+
+tr td {
+    padding: 5px;
+}
+
+#add-table td {
+    max-width: 210px;
+}
+
+#greeting {
+    margin-right: 50px;
+    color: #ccc;
+    font-size: 13px;
+}
